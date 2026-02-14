@@ -6,6 +6,33 @@
 <title>NKB Global Chem</title>
 
 <style>
+    .whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+    fill: white;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -219,6 +246,16 @@ footer {
 <footer>
     © 2020 NKB Global Chem | Industrial Adhesives & Chemical Sourcing
 </footer>
+<a class="whatsapp-float" 
+   href="https://wa.me/919711311056?text=Hello%20NKB%20Global%20Chem,%20I%20am%20interested%20in%20your%20industrial%20adhesives%20and%20chemical%20products."
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+
+    <svg viewBox="0 0 32 32">
+        <path d="M16 .396C7.164.396 0 7.56 0 16.396c0 2.898.765 5.623 2.096 7.985L0 32l7.816-2.053a15.933 15.933 0 0 0 8.184 2.257c8.836 0 16-7.164 16-16S24.836.396 16 .396zm0 29.174a13.09 13.09 0 0 1-6.657-1.823l-.476-.284-4.642 1.218 1.24-4.52-.31-.466A13.06 13.06 0 0 1 2.913 16.4c0-7.209 5.877-13.086 13.087-13.086 7.209 0 13.086 5.877 13.086 13.086 0 7.21-5.877 13.087-13.086 13.087zm7.187-9.842c-.393-.197-2.323-1.146-2.683-1.276-.36-.131-.622-.197-.884.197-.262.393-1.015 1.276-1.245 1.539-.23.262-.459.295-.852.098-.393-.197-1.659-.611-3.16-1.949-1.168-1.041-1.955-2.326-2.185-2.719-.23-.393-.024-.605.173-.801.177-.176.393-.459.59-.688.197-.23.262-.393.393-.655.131-.262.066-.492-.033-.688-.098-.197-.884-2.131-1.211-2.92-.319-.765-.643-.661-.884-.674-.23-.013-.492-.016-.754-.016s-.688.098-1.049.492c-.36.393-1.377 1.345-1.377 3.278 0 1.933 1.409 3.802 1.605 4.065.197.262 2.773 4.236 6.72 5.938.939.405 1.671.647 2.241.829.941.299 1.799.257 2.477.156.756-.113 2.323-.949 2.651-1.866.328-.917.328-1.703.23-1.866-.098-.164-.36-.262-.754-.459z"/>
+    </svg>
+
+</a>
 
 </body>
 </html>
