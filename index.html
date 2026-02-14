@@ -3,161 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NKB Global Chem</title>
+<title>NKB Global Chem | Industrial Adhesives & Chemicals</title>
 
 <style>
-    .whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 55px;
-    height: 55px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.whatsapp-float:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
-}
-
-.whatsapp-float svg {
-    width: 26px;
-    height: 26px;
-    fill: white;
-}
-
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background: #f4f6f8;
-    color: #1a1a1a;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#1d2d3c;
 }
 
 header {
-    background: white;
-    padding: 18px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    background:#ffffff;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
 header img {
-    height: 55px;
+    height:60px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #1a1a1a;
-    margin-left: 30px;
-    font-weight: 500;
+    margin-left:30px;
+    text-decoration:none;
+    color:#1d2d3c;
+    font-weight:600;
 }
 
 .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: #0f2b46;
-    color: white;
+    text-align:center;
+    padding:100px 20px;
+    background:#0e2a47;
+    color:white;
 }
 
 .hero h1 {
-    font-size: 46px;
-    margin-bottom: 20px;
+    font-size:48px;
+    margin-bottom:20px;
 }
 
 .hero p {
-    max-width: 750px;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.6;
-    opacity: 0.9;
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 14px 32px;
-    background: white;
-    color: #0f2b46;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
+.btn {
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    background:#ffffff;
+    color:#0e2a47;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:4px;
 }
 
-.button:hover {
-    background: #e6e6e6;
+.section {
+    padding:80px 8%;
+    text-align:center;
 }
 
-section {
-    padding: 80px 8%;
-    text-align: center;
-}
-
-h2 {
-    font-size: 32px;
-    margin-bottom: 50px;
-    color: #0f2b46;
+.section h2 {
+    font-size:32px;
+    margin-bottom:40px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:30px;
 }
 
 .card {
-    background: white;
-    padding: 30px;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
+    background:white;
+    padding:30px;
+    border-radius:6px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    transition:all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    margin-bottom:20px;
 }
 
-.industries div {
-    background: white;
-    padding: 25px;
-    border-radius: 6px;
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
+.footer {
+    background:#0e2a47;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
 }
 
-.industries div:hover {
-    background: #0f2b46;
-    color: white;
-}
-
-.contact {
-    background: #ffffff;
-    padding: 60px 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    font-size: 14px;
-    background: #eaeaea;
+.whatsapp {
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:60px;
+    height:60px;
 }
 </style>
 </head>
@@ -168,93 +122,92 @@ footer {
     <img src="logo.jpeg" alt="NKB Global Chem Logo">
     <nav>
         <a href="#products">Products</a>
-        <a href="#industries">Industries</a>
+        <a href="#warehouses">Warehouses</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<div class="hero">
+<section class="hero">
     <h1>NKB Global Chem</h1>
     <p>
-        Structured industrial sourcing partner for high-volume adhesives, Titanium Dioxide,
-        hydrocarbon resins and specialty industrial chemicals. Global procurement.
-        Surplus optimization. Worldwide execution.
+        Structured international sourcing partner for high-volume industrial adhesives, 
+        Titanium Dioxide (TiO₂), hydrocarbon resins and specialty chemicals.
+        Global procurement. Surplus optimization. Worldwide execution.
     </p>
-    <a class="button" href="NKB_Global_Chem_Company_Profile.pdf" download>
+    <a class="btn" href="NKB_Global_Chem_Corporate_Profile.pdf" download>
         Download Company Profile PDF
     </a>
-</div>
+</section>
 
-<section id="products">
+<section class="section" id="products">
     <h2>Core Products</h2>
     <div class="grid">
 
         <div class="card">
             <img src="hmps-adhesive.jpg" alt="HMPS Adhesive">
             <h3>Hot Melt Pressure Sensitive Adhesives</h3>
-            <p>Regular-grade, off-grade and surplus HMPS for packaging, honeycomb panels and label industries.</p>
+            <p>Regular, off-grade & surplus HMPS for packaging, honeycomb panels and labels.</p>
         </div>
 
         <div class="card">
             <img src="acrylic-adhesive-ibc.jpg" alt="Acrylic Adhesive">
             <h3>Acrylic Industrial Adhesives</h3>
-            <p>Water and solvent-based acrylic systems (55–60% solids) supplied in drum and IBC quantities.</p>
+            <p>Water & solvent-based systems (55–60% solids) supplied in drum & IBC quantities.</p>
         </div>
 
         <div class="card">
             <img src="titanium-dioxide.jpg" alt="Titanium Dioxide">
             <h3>Titanium Dioxide (TiO₂)</h3>
-            <p>Rutile and Anatase grades for coatings, plastics, masterbatch and industrial applications.</p>
+            <p>Rutile & Anatase grades for coatings, plastics and masterbatch industries.</p>
         </div>
 
         <div class="card">
             <img src="hydrocarbon-resin.jpg" alt="Hydrocarbon Resin">
             <h3>Hydrocarbon Resins</h3>
-            <p>C4, C5 and C9 tackifier resins for adhesive modification and rubber compounding.</p>
+            <p>C4, C5 & C9 tackifier resins for adhesive modification and rubber compounding.</p>
         </div>
 
         <div class="card">
-            <img src="specialty-chemicals.jpg" alt="Specialty Chemicals">
+            <img src="specialty-chemicals.jpg" alt="Industrial Chemicals">
             <h3>Specialty Industrial Chemicals</h3>
-            <p>Structured sourcing of surplus, regular and off-grade industrial chemical materials globally.</p>
+            <p>Structured sourcing of regular & surplus industrial chemical materials globally.</p>
         </div>
 
     </div>
 </section>
 
-<section id="industries">
-    <h2>Industries Served</h2>
-    <div class="grid industries">
-        <div>Packaging Industry</div>
-        <div>Manufacturing Industries</div>
-        <div>Paint & Coatings</div>
-        <div>Medical Industry</div>
-        <div>Footwear Industry</div>
-        <div>Label & Tape</div>
-        <div>Composites & Rubber</div>
-        <div>Other Industrial Sectors</div>
+<section class="section" id="warehouses">
+    <h2>Warehousing & Operations</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Bawana Industrial Area</h3>
+            <p>Delhi, India</p>
+        </div>
+        <div class="card">
+            <h3>Faridabad</h3>
+            <p>Haryana, India</p>
+        </div>
+        <div class="card">
+            <h3>Mississauga</h3>
+            <p>Ontario, Canada</p>
+        </div>
     </div>
 </section>
 
-<section id="contact" class="contact">
+<section class="section" id="contact">
     <h2>Contact Us</h2>
     <p><strong>Email:</strong> info@nkbglobalchem.com</p>
     <p><strong>India:</strong> +91 9711311056</p>
     <p><strong>North America:</strong> +1 647 723 3699</p>
 </section>
 
-<footer>
-    © 2020 NKB Global Chem | Industrial Adhesives & Chemical Sourcing
-</footer>
-<a class="whatsapp-float" 
-   href="https://wa.me/919711311056?text=Hello%20NKB%20Global%20Chem,%20I%20am%20interested%20in%20your%20industrial%20adhesives%20and%20chemical%20products."
-   target="_blank"
-   aria-label="Chat on WhatsApp">
+<div class="footer">
+    © 2020 NKB Global Chem | Industrial Adhesives & Chemical Sourcing | Global Operations
+</div>
 
-    <svg viewBox="0 0 32 32">
-        <path d="M16 .396C7.164.396 0 7.56 0 16.396c0 2.898.765 5.623 2.096 7.985L0 32l7.816-2.053a15.933 15.933 0 0 0 8.184 2.257c8.836 0 16-7.164 16-16S24.836.396 16 .396zm0 29.174a13.09 13.09 0 0 1-6.657-1.823l-.476-.284-4.642 1.218 1.24-4.52-.31-.466A13.06 13.06 0 0 1 2.913 16.4c0-7.209 5.877-13.086 13.087-13.086 7.209 0 13.086 5.877 13.086 13.086 0 7.21-5.877 13.087-13.086 13.087zm7.187-9.842c-.393-.197-2.323-1.146-2.683-1.276-.36-.131-.622-.197-.884.197-.262.393-1.015 1.276-1.245 1.539-.23.262-.459.295-.852.098-.393-.197-1.659-.611-3.16-1.949-1.168-1.041-1.955-2.326-2.185-2.719-.23-.393-.024-.605.173-.801.177-.176.393-.459.59-.688.197-.23.262-.393.393-.655.131-.262.066-.492-.033-.688-.098-.197-.884-2.131-1.211-2.92-.319-.765-.643-.661-.884-.674-.23-.013-.492-.016-.754-.016s-.688.098-1.049.492c-.36.393-1.377 1.345-1.377 3.278 0 1.933 1.409 3.802 1.605 4.065.197.262 2.773 4.236 6.72 5.938.939.405 1.671.647 2.241.829.941.299 1.799.257 2.477.156.756-.113 2.323-.949 2.651-1.866.328-.917.328-1.703.23-1.866-.098-.164-.36-.262-.754-.459z"/>
-    </svg>
-
+<!-- WhatsApp Floating Icon -->
+<a href="https://wa.me/919711311056" target="_blank">
+    <img class="whatsapp" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
 </body>
