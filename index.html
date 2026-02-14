@@ -3,151 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NKB Global Chem | Industrial Adhesives & Chemicals</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>NKB Global Chem</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{
-font-family:'Inter',sans-serif;
-background:#ffffff;
-color:#1a1a1a;
-line-height:1.6;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f8;
+    color: #1a1a1a;
 }
 
-.container{width:90%;max-width:1200px;margin:auto;}
-
-header{
-padding:25px 0;
-border-bottom:1px solid #eee;
+header {
+    background: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
+header img {
+    height: 55px;
 }
 
-nav ul{
-list-style:none;
-display:flex;
-gap:30px;
+nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+    margin-left: 30px;
+    font-weight: 500;
 }
 
-nav a{
-text-decoration:none;
-color:#1a1a1a;
-font-weight:500;
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #0f2b46;
+    color: white;
 }
 
-nav a:hover{
-color:#0b2c4a;
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
 }
 
-.hero{
-padding:100px 0;
-text-align:center;
-background:#f8fafc;
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
 }
 
-.hero h1{
-font-size:48px;
-font-weight:700;
-color:#0b2c4a;
-margin-bottom:20px;
+.button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 32px;
+    background: white;
+    color: #0f2b46;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.hero p{
-max-width:800px;
-margin:auto;
-font-size:18px;
-color:#555;
-margin-bottom:30px;
+.button:hover {
+    background: #e6e6e6;
 }
 
-.btn{
-display:inline-block;
-padding:14px 28px;
-background:#0b2c4a;
-color:#fff;
-text-decoration:none;
-border-radius:4px;
-transition:0.3s ease;
+section {
+    padding: 80px 8%;
+    text-align: center;
 }
 
-.btn:hover{
-background:#123b63;
-transform:translateY(-2px);
+h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #0f2b46;
 }
 
-section{
-padding:80px 0;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
-section h2{
-text-align:center;
-font-size:32px;
-margin-bottom:50px;
-color:#0b2c4a;
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:40px;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-.card{
-border:1px solid #eee;
-padding:30px;
-transition:0.3s ease;
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
-.card:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
+.industries div {
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
 }
 
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-margin-bottom:20px;
+.industries div:hover {
+    background: #0f2b46;
+    color: white;
 }
 
-.card h3{
-margin-bottom:15px;
-color:#0b2c4a;
+.contact {
+    background: #ffffff;
+    padding: 60px 20px;
 }
 
-.industries .card{
-text-align:center;
-font-weight:600;
-padding:40px 20px;
-}
-
-.contact{
-background:#f8fafc;
-}
-
-.contact-block{
-text-align:center;
-max-width:700px;
-margin:auto;
-}
-
-.contact-block p{
-margin:12px 0;
-font-size:18px;
-}
-
-footer{
-padding:30px 0;
-text-align:center;
-border-top:1px solid #eee;
-font-size:14px;
-color:#666;
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    background: #eaeaea;
 }
 </style>
 </head>
@@ -155,100 +138,86 @@ color:#666;
 <body>
 
 <header>
-<div class="container">
-<nav>
-<div>
-<img src="logo.jpeg" alt="NKB Global Chem Logo" style="height:50px;">
-</div>
-<ul>
-<li><a href="#products">Products</a></li>
-<li><a href="#industries">Industries</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
+    <img src="logo.jpeg" alt="NKB Global Chem Logo">
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="hero">
-<div class="container">
-<h1>NKB Global Chem</h1>
-<p>Structured industrial sourcing partner for high-volume adhesives, Titanium Dioxide, hydrocarbon resins and specialty industrial chemicals. Global procurement. Surplus optimization. Worldwide execution.</p>
-<a href="NKB_Global_Chem_Company_Profile.pdf" class="btn" download>Download Company Profile PDF</a>
+<div class="hero">
+    <h1>NKB Global Chem</h1>
+    <p>
+        Structured industrial sourcing partner for high-volume adhesives, Titanium Dioxide,
+        hydrocarbon resins and specialty industrial chemicals. Global procurement.
+        Surplus optimization. Worldwide execution.
+    </p>
+    <a class="button" href="NKB_Global_Chem_Company_Profile.pdf" download>
+        Download Company Profile PDF
+    </a>
 </div>
-</section>
 
 <section id="products">
-<div class="container">
-<h2>Core Products</h2>
-<div class="grid">
+    <h2>Core Products</h2>
+    <div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581091870627-3c3a5b9c8d1e" alt="">
-<h3>Hot Melt Pressure Sensitive Adhesives</h3>
-<p>Regular-grade, off-grade and surplus HMPS for honeycomb, packaging and label industries.</p>
-</div>
+        <div class="card">
+            <img src="hmps-adhesive.jpg" alt="HMPS Adhesive">
+            <h3>Hot Melt Pressure Sensitive Adhesives</h3>
+            <p>Regular-grade, off-grade and surplus HMPS for packaging, honeycomb panels and label industries.</p>
+        </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="">
-<h3>Acrylic Industrial Adhesives</h3>
-<p>Water and solvent-based acrylic systems (55–60% solids) supplied in drum and IBC quantities.</p>
-</div>
+        <div class="card">
+            <img src="acrylic-adhesive-ibc.jpg" alt="Acrylic Adhesive">
+            <h3>Acrylic Industrial Adhesives</h3>
+            <p>Water and solvent-based acrylic systems (55–60% solids) supplied in drum and IBC quantities.</p>
+        </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581091012184-5c6c0f09f50d" alt="">
-<h3>Titanium Dioxide (TiO₂)</h3>
-<p>Rutile and Anatase grades for coatings, plastics, masterbatch and industrial applications.</p>
-</div>
+        <div class="card">
+            <img src="titanium-dioxide.jpg" alt="Titanium Dioxide">
+            <h3>Titanium Dioxide (TiO₂)</h3>
+            <p>Rutile and Anatase grades for coatings, plastics, masterbatch and industrial applications.</p>
+        </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581091215367-59ab6f2c1c64" alt="">
-<h3>Hydrocarbon Resins</h3>
-<p>C4, C5 and C9 tackifier resins for adhesive modification and rubber compounding.</p>
-</div>
+        <div class="card">
+            <img src="hydrocarbon-resin.jpg" alt="Hydrocarbon Resin">
+            <h3>Hydrocarbon Resins</h3>
+            <p>C4, C5 and C9 tackifier resins for adhesive modification and rubber compounding.</p>
+        </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1581091870627-3c3a5b9c8d1e" alt="">
-<h3>Specialty Industrial Chemicals</h3>
-<p>Structured sourcing of surplus, regular and off-grade industrial chemical materials globally.</p>
-</div>
+        <div class="card">
+            <img src="specialty-chemicals.jpg" alt="Specialty Chemicals">
+            <h3>Specialty Industrial Chemicals</h3>
+            <p>Structured sourcing of surplus, regular and off-grade industrial chemical materials globally.</p>
+        </div>
 
-</div>
-</div>
+    </div>
 </section>
 
-<section id="industries" class="industries">
-<div class="container">
-<h2>Industries Served</h2>
-<div class="grid">
-
-<div class="card">Packaging Industry</div>
-<div class="card">Manufacturing Industries</div>
-<div class="card">Paint & Coatings</div>
-<div class="card">Medical Industry</div>
-<div class="card">Footwear Industry</div>
-<div class="card">Label & Tape</div>
-<div class="card">Composites & Rubber</div>
-<div class="card">Other Industrial Sectors</div>
-
-</div>
-</div>
+<section id="industries">
+    <h2>Industries Served</h2>
+    <div class="grid industries">
+        <div>Packaging Industry</div>
+        <div>Manufacturing Industries</div>
+        <div>Paint & Coatings</div>
+        <div>Medical Industry</div>
+        <div>Footwear Industry</div>
+        <div>Label & Tape</div>
+        <div>Composites & Rubber</div>
+        <div>Other Industrial Sectors</div>
+    </div>
 </section>
 
 <section id="contact" class="contact">
-<div class="container">
-<h2>Contact Us</h2>
-<div class="contact-block">
-<p><strong>Email:</strong> info@nkbglobalchem.com</p>
-<p><strong>India:</strong> +91 9711311056</p>
-<p><strong>North America:</strong> +1 647 723 3699</p>
-</div>
-</div>
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> info@nkbglobalchem.com</p>
+    <p><strong>India:</strong> +91 9711311056</p>
+    <p><strong>North America:</strong> +1 647 723 3699</p>
 </section>
 
 <footer>
-<div class="container">
-© 2020 NKB Global Chem | Industrial Adhesives & Chemical Sourcing | Global Operations
-</div>
+    © 2020 NKB Global Chem | Industrial Adhesives & Chemical Sourcing
 </footer>
 
 </body>
